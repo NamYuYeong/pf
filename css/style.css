@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Mukta:200,300,500,600,700,800');
+body{
+    background: #292929;
+    margin: 0;
+    padding: 0;
+    }
+#container{
+    position: relative;
+    min-width: 1200px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.circle_container{
+  width: 1200px;  
+  position:relative;
+  margin: 0 auto;
+  height:500px;
+}
+.circle{
+  position:absolute;
+  left:50%; top:50%;
+  transform:translate(-50%,-50%);
+  background: pink;
+  width: 400px;
+  height: 250px;
+  border-radius:50%;
+  opacity:0.5;
+}
+.circle:nth-child(1){
+  background:#e84e54;
+  transform: translate(-50%,-50%) rotate(0deg);
+}
+.circle:nth-child(2){
+  background:#577d51;
+  transform:translate(-50%,-50%) rotate(120deg);
+
+}
+.circle:nth-child(3){
+  background:#825da4;
+  transform:translate(-50%,-50%) rotate(240deg);
+
+}
+.btn{
+    position: relative;
+}
+.btn1{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    background: #916e9a;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10% 10%;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+.btn1:hover{
+    background: #b45d5d;
+}
+
+.circle_container{
+  animation-name:circle;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  
+}
+@keyframes circle{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+.title_1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    height: 200px;
+    font-family: 'Indie Flower', cursive;
+}
+.title_2{
+    color: white;
+    position: absolute;
+    left: 44.5%; top: 58%;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    line-height: 0.9em;
+}
